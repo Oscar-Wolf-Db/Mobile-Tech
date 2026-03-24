@@ -42,5 +42,14 @@ public class StartActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button button3 = findViewById(R.id.buttonML);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(StartActivity.this, MLKitActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
